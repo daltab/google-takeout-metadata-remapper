@@ -9,7 +9,7 @@ The tool is deliberately conservative:
 - It never copies private photos or companion JSON into the repository.
 - It defaults to a dry run.
 - It reports missing and ambiguous matches instead of guessing.
-- It excludes `Instagram` and `Podcast Sharing` paths unless explicitly overridden.
+- It excludes any path segment containing `Instagram`, `Insta`, or `Podcast Sharing` unless explicitly overridden.
 - It verifies written metadata by reading it back with ExifTool.
 
 ## Requirements

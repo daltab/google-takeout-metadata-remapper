@@ -202,7 +202,7 @@ sealed class Options
 
 sealed class TakeoutScanner(Options options)
 {
-    private static readonly Regex ExcludedPath = new("(^|[\\/])(Instagram|Podcast Sharing)([\\/]|$)", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex ExcludedPath = new("(^|[\\/])([^\\/]*(Instagram|Insta|Podcast\\s+Sharing)[^\\/]*)([\\/]|$)", RegexOptions.IgnoreCase | RegexOptions.Compiled);
     private static readonly HashSet<string> MediaExtensions = new(StringComparer.OrdinalIgnoreCase)
     {
         ".jpg", ".jpeg", ".heic", ".heif", ".png", ".webp", ".tif", ".tiff"
