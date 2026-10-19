@@ -1,0 +1,15 @@
+bin/
+obj/
+artifacts/
+staging/
+test-data/
+remap-report.json
+*.supplemental-metadata.json
+*.jpg
+*.jpeg
+*.heic
+*.heif
+*.png
+*.webp
+*.tif
+*.tiff
